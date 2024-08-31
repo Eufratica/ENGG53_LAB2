@@ -5,7 +5,7 @@
 #include "ILI9341.h"
 #include "SPI2.h"
 
-// Configura??es do clock principal para 80 MHz (8 MHz FRC com PLL)
+// Configurações do clock principal para 80 MHz (8 MHz FRC com PLL)
 #pragma config FPLLMUL = MUL_20 
 #pragma config FPLLIDIV = DIV_2 
 #pragma config FPLLODIV = DIV_1
@@ -79,7 +79,7 @@ void setup() {
     // Configurar os pinos do SPI2
     TRISGbits.TRISG6 = 0; // SCK
     TRISGbits.TRISG7 = 0; // MOSI
-    TRISGbits.TRISG8 = 1; // MISO - N�o usar
+    TRISGbits.TRISG8 = 1; // MISO - Não usar
     TRISGbits.TRISG9 = 0; // SS/CS - Usar como DC
     TRISGbits.TRISG13 = 0; // DC
     TRISGbits.TRISG14 = 0; // RESET
